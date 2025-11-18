@@ -4,69 +4,123 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aplicativo Palavras</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png">
+
     <style>
         body {
-            font-family: Arial, sans-serif;
-            max-width: 800px;
+            margin: 0;
+            padding: 0;
+            font-family: "Segoe UI", Arial, sans-serif;
+            background: #f5f7fb;
+            color: #333;
+        }
+
+        .container {
+            max-width: 900px;
             margin: auto;
             padding: 20px;
-            line-height: 1.6;
-        }
-        header {
             text-align: center;
-            margin-bottom: 30px;
         }
-        .btn {
-            background-color: #4CAF50;
-            color: white;
-            padding: 12px 18px;
-            border-radius: 6px;
+
+        header {
+            padding: 60px 20px 20px;
+        }
+
+        h1 {
+            font-size: 42px;
+            margin-bottom: 10px;
+            font-weight: 800;
+            color: #222;
+        }
+
+        p.subtitle {
+            font-size: 18px;
+            color: #555;
+            margin-bottom: 40px;
+        }
+
+        .feature-box {
+            background: white;
+            padding: 30px;
+            margin: 20px 0;
+            border-radius: 16px;
+            box-shadow: 0 4px 14px rgba(0,0,0,0.07);
+            text-align: left;
+        }
+
+        .play-button {
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+        .play-button img {
+            width: 200px;
+            transition: 0.2s;
+        }
+
+        .play-button img:hover {
+            transform: scale(1.04);
+        }
+
+        footer {
+            margin-top: 50px;
+            padding: 20px;
+            color: #666;
+            font-size: 14px;
+        }
+
+        a {
+            color: #2a6bf5;
             text-decoration: none;
-            font-weight: bold;
         }
-        .btn:hover {
-            background-color: #45a049;
+
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
+
 <body>
 
-<header>
-    <h1>Aplicativo Palavras</h1>
-    <p>Descubra milhares de palavras em português e aprimore suas habilidades!</p>
-</header>
+<div class="container">
+    <header>
+        <h1>Aplicativo Palavras</h1>
+        <p class="subtitle">Encontre, descubra e aprenda milhares de palavras em português! 📚</p>
 
-<section>
-    <h2>Sobre o App</h2>
-    <p>
-        O <strong>Aplicativo Palavras</strong> permite pesquisar palavras em português,
-        visualizar formas verbais, encontrar anagramas e muito mais.  
-        Simples, rápido e ideal para quem adora jogos de palavras ou estudos.
-    </p>
-</section>
+        <div class="play-button">
+            <a href="https://play.google.com/store/apps/details?id=com.solucoescriativas.palavras" target="_blank">
+                <img src="playstore.png" alt="Baixar na Google Play">
+            </a>
+        </div>
+    </header>
 
-<section>
-    <h2>Download</h2>
-    <p>
-        Baixe o aplicativo na Google Play:
-    </p>
-    <p>
-        <a class="btn" href="https://play.google.com/store/apps/details?id=com.solucoescriativas.palavras" target="_blank">
-            Baixar na Play Store
-        </a>
-    </p>
-</section>
+    <div class="feature-box">
+        <h2>📘 Sobre o App</h2>
+        <p>
+            O <strong>Aplicativo Palavras</strong> é rápido, leve e ideal para quem gosta de jogos de palavras, 
+            escrita, estudos e desafios mentais.
+        </p>
+    </div>
 
-<section>
-    <h2>Privacidade</h2>
-    <p>
-        Leia nossa <a href="privacy.html">Política de Privacidade</a>.
-    </p>
-</section>
+    <div class="feature-box">
+        <h2>🔎 Recursos</h2>
+        <ul>
+            <li>Busca instantânea de palavras</li>
+            <li>Consulta de formas verbais</li>
+            <li>Geração de anagramas</li>
+            <li>Interface simples e objetiva</li>
+            <li>Totalmente gratuito</li>
+        </ul>
+    </div>
 
-<footer style="margin-top: 40px; text-align: center; color: #777;">
-    © 2025 Aplicativo Palavras
-</footer>
+    <p>Leia a nossa <a href="privacy.html">Política de Privacidade</a>.</p>
+
+    <footer>
+        © 2025 Aplicativo Palavras — Todos os direitos reservados.
+    </footer>
+</div>
 
 </body>
 </html>
